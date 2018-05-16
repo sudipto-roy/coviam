@@ -1,0 +1,98 @@
+@import "normalize.css";
+
+header {
+  height: 50px;
+  background: #1dce6d;
+  border-bottom: 2px solid #13a555;
+  padding: 6px;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  height: 30px;
+  background: #1dce6d;
+  text-align: center;
+  padding: 5px;
+  border-top: 1px solid #13a555;
+  color: #fff;
+}
+
+main {
+  min-height: calc(100vh - 80px);
+  padding: 20px;
+}
+
+.start-test,
+.next-question {
+  color: white;
+  background: #21ce6f;
+  padding: 10px 20px;
+  display: block;
+  width: 200px;
+  border-radius: 2px;
+  margin: 10% auto 0;
+  transition: .2s;
+}
+
+.start-test:hover,
+.next-question:hover {
+  background: #13a555;
+  transition: .4s;
+}
+
+.next-question {
+  margin: 20px 0 0;
+}
+
+.next-question:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.question-text {
+  text-align: left;
+}
+
+.options {
+  display: inline-block;
+  max-width: 600px;
+}
+
+.option-label {
+  display: block;
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.option-label input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.test-result {
+  text-align: center;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+td,
+th {
+  border: 1px solid #ccc;
+  padding: 4px;
+}
+
+.correct-ans {
+  background: #d5ffec;
+}
+
+.wrong-ans {
+  background: #ffd5d5;
+}
